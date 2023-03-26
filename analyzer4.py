@@ -3,6 +3,15 @@ import json
 def analyze_seo_data(seo_data):
     insights = {}
 
+    # Title tags
+    insights['title_tag'] = [f"Title tag: {seo_data.get('title_tag', 'No title tag found.')}"]
+
+    # Meta description
+    insights['meta_description'] = [f"Meta description: {seo_data.get('meta_description', 'No meta description found.')}"]
+
+    # Meta keywords
+    insights['meta_keywords'] = [f"Meta keywords: {seo_data.get('meta_keywords', 'No meta keywords found.')}"]
+
     insights['headers'] = []
     for header_type, header_list in seo_data['headers'].items():
         for header in header_list:
