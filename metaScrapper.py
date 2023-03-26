@@ -165,7 +165,7 @@ def check_ssl_certificate(url):
 
 
 def main():
-    url = 'https://palosanto.ai'
+    url = 'https://example.com'
     seo_data = extract_seo_data(url)
 
     if seo_data is None:
